@@ -1,5 +1,5 @@
 let project_folder = require("path").basename(__dirname);
-let source_folder = "#XSRM2.0";
+let source_folder = "#XSRM";
 
 let fs = require("fs");
 
