@@ -1,10 +1,10 @@
 .container {
-  max-width: 1350px;
+  max-width: 135rem;
   width: 100%;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 0px 2rem;
   &_defaultTopSpace {
-    padding-top: 150px;
+    padding-top: 15rem;
   }
 }
 
@@ -13,7 +13,7 @@
 }
 
 main {
-  padding-bottom: 150px;
+  padding-bottom: 15rem;
 }
 
 main.noBottomPadding {
@@ -38,9 +38,9 @@ main.noBottomPadding {
 }
 
 .innerPageSpace {
-  padding-top: 40px;
+  padding-top: 4rem;
   &__sectionTitle {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
   }
 }
 
@@ -61,23 +61,23 @@ body.overlay {
 @media (max-width: 1024px) {
   .container {
     &_defaultTopSpace {
-      padding-top: 100px;
+      padding-top: 10rem;
     }
   }
 
   main {
-    padding-bottom: 100px;
+    padding-bottom: 10rem;
   }
 }
 
 @media (max-width: 768px) {
   .container {
     &_defaultTopSpace {
-      padding-top: 70px;
+      padding-top: 7rem;
     }
   }
 
   main {
-    padding-bottom: 70px;
+    padding-bottom: 7rem;
   }
 }

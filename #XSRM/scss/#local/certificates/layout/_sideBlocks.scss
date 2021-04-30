@@ -8,8 +8,8 @@
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    padding-bottom: 170px;
+    gap: 3rem;
+    padding-bottom: 17rem;
     align-items: center;
   }
 
@@ -30,18 +30,18 @@
 
   &__title {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 2.8rem;
     line-height: 150%;
     color: #333333;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
 
   &__text {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 150%;
     color: #888c9b;
     &:not(:last-of-type) {
-      margin-bottom: 15px;
+      margin-bottom: 1.5rem;
     }
   }
 }
@@ -79,7 +79,7 @@
 @media (max-width: 1024px) {
   .block {
     &__container {
-      padding-bottom: 100px;
+      padding-bottom: 10rem;
     }
   }
 }
@@ -87,15 +87,15 @@
 @media (max-width: 768px) and( min-width:481px) {
   .block {
     &__column {
-      max-width: 400px;
+      max-width: 40rem;
       text-align: center;
-      margin: -50px auto 0 auto;
+      margin: -5rem auto 0 auto;
       position: relative;
-      padding: 20px;
+      padding: 2rem;
       z-index: 2;
       background-color: white;
-      border-top-right-radius: 24px;
-      border-top-left-radius: 24px;
+      border-top-right-radius: 2.4rem;
+      border-top-left-radius: 2.4rem;
     }
   }
 }
@@ -103,7 +103,7 @@
 @media (max-width: 768px) {
   .block {
     &__container {
-      padding-bottom: 70px;
+      padding-bottom: 7rem;
       display: block;
     }
 
@@ -112,22 +112,22 @@
     }
 
     &__image {
-      max-width: 480px;
+      max-width: 48rem;
       margin: 0 auto;
     }
 
     &__title {
       font-weight: 500;
-      font-size: 28px;
+      font-size: 2.8rem;
       line-height: 150%;
       color: #333333;
-      margin-bottom: 30px;
-      font-size: 20px;
+      margin-bottom: 3rem;
+      font-size: 2rem;
       text-align: center;
     }
 
     &__text {
-      font-size: 16px;
+      font-size: 1.6rem;
       line-height: 150%;
       color: #888c9b;
     }
@@ -139,16 +139,16 @@
     &__container {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 20px;
+      gap: 2rem;
     }
 
     &__title {
-      margin-bottom: 20px;
-      font-size: 18px;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
     }
 
     &__text {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 }

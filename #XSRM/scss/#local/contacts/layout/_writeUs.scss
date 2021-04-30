@@ -3,28 +3,28 @@
 }
 
 .writeUs {
-  padding-bottom: 100px;
-  margin-top: 200px;
+  padding-bottom: 10rem;
+  margin-top: 20rem;
   &__container {
-    max-width: 970px;
+    max-width: 97rem;
   }
 
   &__customInput {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
 
   &__form {
     width: 100%;
-    max-width: 650px;
+    max-width: 65rem;
   }
 
   &__subTitle,
   &__form {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
   }
 
   &__sectionTitle {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
 
   &__note {
@@ -41,8 +41,8 @@
     border: 1px solid #dfe4e8;
     background: rgba(52, 118, 164, 0.1);
     box-sizing: border-box;
-    border-radius: 8px;
-    padding: 50px;
+    border-radius: 0.8rem;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@
   }
 
   &__text {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 150%;
     text-align: center;
     letter-spacing: 0.01em;
@@ -58,41 +58,41 @@
     width: 100%;
     max-width: 100%;
     &_small {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 
   &__button {
     background: #416bab;
-    border-radius: 8px;
-    min-width: 140px;
-    min-height: 40px;
-    font-size: 16px;
+    border-radius: 0.8rem;
+    min-width: 14rem;
+    min-height: 4rem;
+    font-size: 1.6rem;
     line-height: 150%;
     text-align: center;
     letter-spacing: 0.01em;
     color: #fdfefe;
-    padding: 5px;
+    padding: 0.5rem;
   }
 }
 
 @media (max-width: 1024px) {
   .writeUs {
-    margin-top: 150px;
+    margin-top: 15rem;
   }
 }
 
 @media (max-width: 768px) {
   .writeUs {
-    margin-top: 100px;
+    margin-top: 10rem;
 
     &__wrapper {
-      padding: 30px;
+      padding: 3rem;
     }
 
     &__subTitle,
     &__form {
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
     }
   }
 }
@@ -114,11 +114,11 @@
 @media (max-width: 480px) {
   .writeUs {
     &__wrapper {
-      padding: 15px;
+      padding: 1.5rem;
     }
     &__text,
     &__button {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 }

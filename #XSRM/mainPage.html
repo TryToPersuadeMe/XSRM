@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <script>
+      if (/(MSIE|Triden)/.test(navigator.userAgent)) {
+        alert("используйте другой браузер");
+        const $body = document.querySelector("body");
+        $body.className = "IE";
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
@@ -15,7 +22,7 @@
       @@include("./html/_#header.html")
       <div class="noBottomPadding">
         @@include("./html/mainPage/_firstScreen.html") @@include("./html/mainPage/_features.html")
-        @@include("./html/mainPage/_sideBlocks.html") 
+        @@include("./html/mainPage/_sideBlocks.html")
         <div class="waveBackground">
           @@include("./html/mainPage/_modules.html") @@include("./html/mainPage/_calculator.html")
           @@include("./html/mainPage/_partners.html") @@include("./html/_#footer.html")
@@ -24,7 +31,16 @@
     </div>
 
     <!-- main js -->
+
     <script src="./js/global.js"></script>
+    <!-- <script src="./js/local/mainPage/swiper.bundle.min.js"></script> -->
     <script src="./js/mainPage.js"></script>
+
+    <script>
+      if (/(MSIE|Triden)/.test(navigator.userAgent)) {
+        const $body = document.querySelector("body");
+        $body.className = "IE";
+      }
+    </script>
   </body>
 </html>

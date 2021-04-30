@@ -3,7 +3,7 @@
   margin-top: 12vw;
   &::before {
     content: "";
-    @include backgroundImage("../resources/global/greyMask.svg",100%);
+    @include backgroundImage("../resources/global/greyMask.svg", 100%);
     position: absolute;
     right: 50%;
     top: 0px;

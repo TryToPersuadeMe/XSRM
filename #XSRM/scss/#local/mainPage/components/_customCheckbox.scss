@@ -1,12 +1,11 @@
 .customCheckbox {
   background-color: #fdfefe;
   border: 1px solid #dfe4e8;
-  padding: 20px 30px 20px 50px;
-  border-radius: 8px;
+  padding: 2rem 3rem 2rem 5rem;
+  border-radius: 0.8rem;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  text-align: center;
   align-items: center;
   position: relative;
   transition: 0.3s ease;
@@ -16,21 +15,21 @@
   }
 
   &__text {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 150%;
-    padding-left: 20px;
+    padding-left: 2rem;
     position: relative;
     letter-spacing: 0.01em;
-    margin-right: 30px;
+    margin-right: 3rem;
     &::before {
       content: "";
       top: 50%;
-      left: 5px;
+      left: 0.5rem;
       position: absolute;
-      min-width: 10px;
-      max-width: 10px;
-      min-height: 10px;
-      max-height: 10px;
+      min-width: 1rem;
+      max-width: 1rem;
+      min-height: 1rem;
+      max-height: 1rem;
       background-color: #ad6fa1;
       border-radius: 100%;
       transform: translate(-50%, -50%);
@@ -49,34 +48,34 @@
 
   &__icon {
     display: block;
-    min-width: 15px;
-    max-width: 15px;
-    min-height: 15px;
-    max-height: 15px;
+    min-width: 1.5rem;
+    max-width: 1.5rem;
+    min-height: 1.5rem;
+    max-height: 1.5rem;
     background-color: #f2f2f2;
     border: 1px solid #dfe4e8;
     box-shadow: inset 0px 0px 3px rgba(82, 82, 82, 0.15);
-    border-radius: 2px;
+    border-radius: 0.2rem;
   }
 }
 
 @media (max-width: 1024px) {
   .customCheckbox {
-    padding: 10px 20px 10px 30px;
+    padding: 1rem 2rem 1rem 3rem;
   }
 }
 
 @media (max-width: 768px) {
   .customCheckbox {
-    padding: 10px 10px 10px 15px;
+    padding: 1rem 1rem 1rem 1.5rem;
   }
 }
 
 @media (max-width: 700px) {
   .customCheckbox {
     &__text {
-      font-size: 14px;
-      margin-right: 20px;
+      font-size: 1.4rem;
+      margin-right: 2rem;
     }
   }
 }

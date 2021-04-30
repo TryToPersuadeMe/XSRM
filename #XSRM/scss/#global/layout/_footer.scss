@@ -1,10 +1,10 @@
-$maskHeight: 120px;
+$maskHeight: 12rem;
 
 .footer {
   color: #fdfefe;
   font-family: "Rubik";
   background-color: #416bab;
-  padding-bottom: 50px;
+  padding-bottom: 5rem;
   position: relative;
   margin-top: $maskHeight / 2;
   z-index: 1;
@@ -25,8 +25,8 @@ $maskHeight: 120px;
 
   &__container {
     display: grid;
-    grid-template-columns: minmax(200px, auto) minmax(200px, 280px) minmax(160px, 280px);
-    gap: 50px;
+    grid-template-columns: minmax(20rem, auto) minmax(20rem, 28rem) minmax(16rem, 28rem);
+    gap: 5rem;
   }
 }
 
@@ -34,20 +34,20 @@ $maskHeight: 120px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 280px;
+  max-width: 28rem;
   width: 100%;
 
   & > :not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
   &__title {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.2;
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #fdfefe;
     line-height: 150%;
     display: block;
@@ -58,15 +58,21 @@ $maskHeight: 120px;
 }
 
 .logotypes {
-  max-width: 310px;
+  max-width: 31rem;
   width: 100%;
   &__row {
     display: flex;
+    align-items: center;
     width: 100%;
     justify-content: space-around;
     & > :not(:last-child) {
-      margin-right: 20px;
+      margin-right: 2rem;
     }
+  }
+
+  &__addition{
+    max-width: 6rem;
+    width: 100%;
   }
 
   &__addition,
@@ -80,24 +86,24 @@ $maskHeight: 120px;
   &__main {
     max-width: 100%;
     width: 100%;
-    margin: 20px 0 50px 0;
+    margin: 2rem 0 5rem 0;
   }
 }
 
 @media (max-width: 1024px) {
   .logotypes {
-    max-width: 260px;
+    max-width: 26rem;
 
     &__main {
-      height: 50px;
-      margin-bottom: 30px;
+      height: 5rem;
+      margin-bottom: 3rem;
     }
   }
 }
 
 @media (max-width: 700px) {
   .logotypes {
-    max-width: 200px;
+    max-width: 20rem;
     &__row {
       max-width: 80%;
       margin: 0 auto;
@@ -109,7 +115,7 @@ $maskHeight: 120px;
       grid-template-columns: 1fr;
       justify-content: center;
       justify-items: center;
-      gap: 50px;
+      gap: 5rem;
     }
   }
 
@@ -123,15 +129,15 @@ $maskHeight: 120px;
 @media (max-width: 480px) {
   .footer {
     &__container {
-      gap: 35px;
+      gap: 3.5rem;
     }
   }
 
   .logotypes {
-    max-width: 160px;
+    max-width: 16rem;
 
     &__main {
-      margin: 0px 0 30px 0;
+      margin: 0px 0 3rem 0;
     }
     &__row {
       max-width: 100%;

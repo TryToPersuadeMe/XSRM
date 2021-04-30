@@ -1,6 +1,27 @@
 // Sass Variables
 $body-html-px: 10px;
 
+@media (min-width: 2400px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 2800px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 3200px) {
+  html,
+  body {
+    font-size: 22px;
+  }
+}
+
 /* exemple - .overlay {
   z-index: z(overlay);
 }
@@ -14,6 +35,6 @@ $z-layers: (
   burgerIcon: 100
 );
 
-$headerHeight: 80px;
+$headerHeight: 8rem;
 
 $backgroundWaveMask: rgba(65, 107, 171, 0.05);

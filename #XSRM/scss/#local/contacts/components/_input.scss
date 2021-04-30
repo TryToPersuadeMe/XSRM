@@ -4,10 +4,10 @@
   justify-items: end;
   align-items: center;
   text-align: end;
-  gap: 20px;
+  gap: 2rem;
 
   &_textArea {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     align-self: start;
 
     .customInput__text {
@@ -18,13 +18,13 @@
       resize: none;
     }
     .customInput__input {
-      height: 120px;
+      height: 12rem;
     }
   }
 
   &__text {
     font-family: Rubik;
-    font-size: 20px;
+    font-size: 2rem;
     color: #416bab;
   }
 
@@ -34,7 +34,7 @@
       &::before {
         content: "*";
         color: #ad6fa1;
-        margin-right: 3px;
+        margin-right: 0.3rem;
       }
     }
   }
@@ -42,16 +42,16 @@
   &__input {
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid #dfe4e8;
-    border-radius: 4px;
-    max-width: 440px;
+    border-radius: 0.4rem;
+    max-width: 44rem;
     width: 100%;
-    min-height: 40px;
-    padding: 8px 20px;
-    font-size: 16px;
+    min-height: 4rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.6rem;
     &::placeholder {
       font-family: Rubik;
-      font-size: 14px;
-      line-height: 21px;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
       color: #adadad;
     }
   }
@@ -60,7 +60,7 @@
 @media (max-width: 768px) {
   .customInput {
     &__text {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
   }
 
@@ -76,15 +76,15 @@
 
 @media (max-width: 480px) {
   .customInput {
-    gap: 10px;
+    gap: 1rem;
     &__text {
-      font-size: 16px;
+      font-size: 1.6rem;
     }
     &__input {
-      padding: 8px 10px;
-      font-size: 16px;
+      padding: 0.8rem 1rem;
+      font-size: 1.6rem;
       &::placeholder {
-        font-size: 12px;
+        font-size: 1.2rem;
       }
     }
   }

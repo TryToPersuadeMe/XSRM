@@ -3,19 +3,19 @@
   background-position: top right;
 
   &__container {
-    padding-top: 100px;
+    padding-top: 10rem;
   }
 
   &__title {
-    margin-bottom: 70px;
+    margin-bottom: 7rem;
   }
 
   &__gridWrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 22rem));
     justify-content: space-between;
     justify-items: center;
-    gap: 50px;
+    gap: 5rem;
     width: 100%;
     max-width: 100%;
   }
@@ -24,7 +24,7 @@
 @media (max-width: 768px) {
   .features {
     &__container {
-      padding-top: 70px;
+      padding-top: 7rem;
     }
 
     &__gridWrapper {
