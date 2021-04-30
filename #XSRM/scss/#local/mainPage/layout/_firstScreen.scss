@@ -16,19 +16,19 @@
     z-index: 1;
   }
 
-  &::before {
-    background: rgba(0, 0, 0, 0.5) url(../resources/mainPage/firstScreen/pattern-dotted.svg) 0 0 repeat;
-  }
+  // &::before {
+  //   background: rgba(0, 0, 0, 0.5) url(../resources/mainPage/firstScreen/pattern-dotted.svg) 0 0 repeat;
+  // }
 
   &__videoWrapper {
     position: relative;
     // opacity: 0.7;
     height: 100%;
     z-index: -1;
-
-    &::before {
-      background: rgba(0, 0, 0, 0.5) url(../resources/mainPage/firstScreen/pattern-dotted.svg) 0 0 repeat;
-    }
+    overflow: hidden;
+    // &::before {
+    //   background: rgba(0, 0, 0, 0.5) url(../resources/mainPage/firstScreen/pattern-dotted.svg) 0 0 repeat;
+    // }
 
     &_desktop {
       max-width: 50%;
@@ -38,16 +38,16 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
+      bottom: 0;
+      right: 0;
+      min-width: 201%;
+      min-height: 201%;
       display: block;
       z-index: 1;
     }
 
     &::after {
-      // background: linear-gradient(0deg, rgba(1, 27, 69, 0.5), rgba(1, 27, 69, 0.5));
+      background: linear-gradient(0deg, rgba(1, 27, 69, 0.5), rgba(1, 27, 69, 0.5));
     }
   }
 
