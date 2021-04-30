@@ -4,7 +4,8 @@
 
   @include backgroundImage("../resources/mainPage/firstScreen/1.png", cover);
 
-  &::after {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -15,11 +16,19 @@
     z-index: 1;
   }
 
+  &::before {
+    background: rgba(0, 0, 0, 0.5) url(../resources/mainPage/firstScreen/pattern-dotted.svg) 0 0 repeat;
+  }
+
   &__videoWrapper {
     position: relative;
     // opacity: 0.7;
     height: 100%;
     z-index: -1;
+
+    &::before {
+      background: rgba(0, 0, 0, 0.5) url(../resources/mainPage/firstScreen/pattern-dotted.svg) 0 0 repeat;
+    }
 
     &_desktop {
       max-width: 50%;
@@ -39,10 +48,6 @@
 
     &::after {
       // background: linear-gradient(0deg, rgba(1, 27, 69, 0.5), rgba(1, 27, 69, 0.5));
-    }
-
-    &::before {
-      background: rgba(0, 0, 0, 0.5) url(../resources/mainPage/firstScreen/pattern-dotted.svg) 0 0 repeat;
     }
   }
 

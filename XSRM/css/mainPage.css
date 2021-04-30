@@ -4597,7 +4597,7 @@ body.IE {
   background-image: url("../resources/mainPage/firstScreen/1.png");
 }
 
-.firstScreen::after {
+.firstScreen::after, .firstScreen::before {
   content: "";
   position: absolute;
   top: 0;
@@ -4608,10 +4608,18 @@ body.IE {
   z-index: 1;
 }
 
+.firstScreen::before {
+  background: rgba(0, 0, 0, 0.5) url(../resources/mainPage/firstScreen/pattern-dotted.svg) 0 0 repeat;
+}
+
 .firstScreen__videoWrapper {
   position: relative;
   height: 100%;
   z-index: -1;
+}
+
+.firstScreen__videoWrapper::before {
+  background: rgba(0, 0, 0, 0.5) url(../resources/mainPage/firstScreen/pattern-dotted.svg) 0 0 repeat;
 }
 
 .firstScreen__videoWrapper_desktop {
@@ -4627,10 +4635,6 @@ body.IE {
   min-height: 100%;
   display: block;
   z-index: 1;
-}
-
-.firstScreen__videoWrapper::before {
-  background: rgba(0, 0, 0, 0.5) url(../resources/mainPage/firstScreen/pattern-dotted.svg) 0 0 repeat;
 }
 
 .firstScreen__video {
