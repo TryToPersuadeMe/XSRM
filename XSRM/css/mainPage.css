@@ -4630,12 +4630,6 @@ body.IE {
   z-index: 1;
 }
 
-.firstScreen__videoWrapper::after {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(1, 27, 69, 0.5)), to(rgba(1, 27, 69, 0.5)));
-  background: -o-linear-gradient(bottom, rgba(1, 27, 69, 0.5), rgba(1, 27, 69, 0.5));
-  background: linear-gradient(0deg, rgba(1, 27, 69, 0.5), rgba(1, 27, 69, 0.5));
-}
-
 .firstScreen__video {
   -o-object-fit: contain;
      object-fit: contain;
