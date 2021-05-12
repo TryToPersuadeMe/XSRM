@@ -42,9 +42,9 @@ clean_css = require("gulp-clean-css");
 rename = require("gulp-rename");
 uglify = require("gulp-uglify-es").default;
 imagemin = require("gulp-imagemin");
-webp = require("gulp-webp");
-webphtml = require("gulp-webp-html");
-webpcss = require("gulp-webpcss");
+// webp = require("gulp-webp");
+// webphtml = require("gulp-webp-html");
+// webpcss = require("gulp-webpcss");
 ttf2woff = require("gulp-ttf2woff");
 ttf2woff2 = require("gulp-ttf2woff2");
 fonter = require("gulp-fonter");
@@ -63,7 +63,7 @@ svgSymbols = require("gulp-svg-symbols");
 
 // манипуляции с HTML
 const html = () => {
-  return src(path.src.html).pipe(fileinclude()).pipe(webphtml()).pipe(dest(path.build.html));
+  return src(path.src.html).pipe(fileinclude()).pipe(dest(path.build.html));
   // .pipe(browsersync.stream());
 };
 
@@ -125,7 +125,7 @@ const css = () => {
         overrideBrowserslist: ["last 5 versions"],
       })
     )
-    .pipe(webpcss())
+    // .pipe(webpcss())
     .pipe(dest(path.build.css))
     .pipe(clean_css())
     .pipe(
@@ -159,11 +159,11 @@ const js_plugins = () => {
 // Манипуляции с IMG
 const images = () => {
   return src(path.src.resources)
-    .pipe(
-      webp({
-        quality: 70,
-      })
-    )
+    // .pipe(
+    //   webp({
+    //     quality: 70,
+    //   })
+    // )
     .pipe(dest(path.build.resources))
     .pipe(src(path.src.resources))
     .pipe(
